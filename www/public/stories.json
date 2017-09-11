@@ -519,6 +519,86 @@
                 "text": "A classic Woolworth five-and-dime in Astoria"
             }, 
             "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.9216454498562, 
+                    40.8368540747711
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "1237 Jerome Avenue", 
+                "bbl": [
+                    2, 
+                    2855, 
+                    1
+                ], 
+                "id": 26, 
+                "text": "Fictional Sherman McCoy from Tom Wolfe's \"Bonfire of the Vanities\" had his hit-and-run accident one fateful night at this Bronx corner"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.8773026042952, 
+                    40.8034220174013
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "1280 Ryawa Avenue", 
+                "bbl": [
+                    2, 
+                    2780, 
+                    73
+                ], 
+                "id": 27, 
+                "text": "Imagine this pick-up truck loaded with tomatoes as it visits the Hunts Point Market in the Bronx"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.9277921974895, 
+                    40.8270129980769
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "800 East 161 Street", 
+                "bbl": [
+                    2, 
+                    2491, 
+                    1
+                ], 
+                "id": 28, 
+                "text": "The House That Ruth Built (aka Yankee Stadium). Technically across the street but this is where the city stuck the picture on the map."
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -74.0725861358831, 
+                    40.6439808012927
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "1 Richmond Terrace", 
+                "bbl": [
+                    5, 
+                    2, 
+                    1
+                ], 
+                "id": 29, 
+                "text": "St. George Terminal. The guy slowly walking away from the Staten Island Ferry, briefcase in hand, must've had a long day at the office."
+            }, 
+            "type": "Feature"
         }
     ], 
     "type": "FeatureCollection"

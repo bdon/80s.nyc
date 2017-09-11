@@ -166,3 +166,29 @@
   block: 678
   lot: 40
   text: A classic Woolworth five-and-dime in Astoria
+
+- address: 1237 Jerome Avenue
+  boro: 2
+  block: 2855
+  lot: 1
+  text: Fictional Sherman McCoy from Tom Wolfe's "Bonfire of the Vanities" had his hit-and-run accident one fateful night at this Bronx corner
+
+- address: 1280 Ryawa Avenue
+  boro: 2
+  block: 2780
+  lot: 73
+  text: Imagine this pick-up truck loaded with tomatoes as it visits the Hunts Point Market in the Bronx
+
+- address: 800 East 161 Street
+  boro: 2
+  block: 2491
+  lot: 1
+  text: The House That Ruth Built (aka Yankee Stadium). Technically across the street but this is where the city stuck the picture on the map.
+
+- address: 1 Richmond Terrace
+  boro: 5
+  block: 2
+  lot: 1
+  text: St. George Terminal. The guy slowly walking away from the Staten Island Ferry, briefcase in hand, must've had a long day at the office.
+
+
