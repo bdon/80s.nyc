@@ -1,0 +1,92 @@
+.nogap {
+  vertical-align:top;
+  position:relative;
+}
+
+.showfilm-enter {
+  max-height: 0px;
+  transition:  300ms;
+}
+
+.showfilm-enter.showfilm-enter-active {
+  height: auto;
+  max-height: 400px;
+}
+
+.showfilm-leave {
+  max-height: 400px;
+}
+
+.showfilm-leave.showfilm-leave-active {
+  max-height: 0px;
+  transition:  300ms;
+}
+
+
+.mapContainer {
+   height:100%;
+   background-color:black;
+   display:table-row;
+}
+
+#mapid {
+  height:100%;
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: "Oswald";
+  letter-spacing:2px;
+}
+
+h3 {
+  font-family: "Oswald";
+  letter-spacing:2px;
+}
+
+#root {
+  height:100%;
+  width:100%;
+}
+
+.app-root {
+  height:100%;
+  width:100%;
+  display:table;
+  table-layout: fixed;
+}
+
+.transgroup {
+  width:100%;
+  height:100%;
+}
+
+#about {
+  white-space: normal;
+}
+
+::-webkit-scrollbar {
+  background: black;
+  border-radius: 4px;
+  height: 10px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 4px;
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib {
+  background-color:rgba(0,0,0,0.5);
+}

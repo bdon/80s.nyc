@@ -1,0 +1,11 @@
+.aboutContainer {
+  overflow-y:scroll;
+  height:400px;
+
+  padding:40px;
+  line-height:1.5em;
+}
+
+.aboutContainer a {
+  color:#fbdd96;
+}

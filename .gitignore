@@ -1,0 +1,12 @@
+.cache
+*.pyc
+*.swp
+node_modules/
+build/
+.DS_Store
+venv
+output/
+ndjsons/
+data/
+www-data
+secrets

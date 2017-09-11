@@ -1,0 +1,194 @@
+.filmstripStretch {
+  display:inline-block;
+  cursor:grab;
+}
+
+.missingImage {
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.streetTitle {
+  font-family: "Oswald";
+}
+
+.streetTitle:hover .closeButton {
+  background-color:#555555;
+}
+
+.streetTitle:hover {
+  cursor: pointer;
+}
+
+.imageContainer {
+  display:inline-block;
+  position:relative;
+  max-height:300px;
+  overflow:hidden;
+  vertical-align:top;
+}
+
+.imageContainer .image {
+  user-drag: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  height:400px;
+  vertical-align:top;
+}
+
+.storyFrame {
+  display:inline-block;
+  background-color:black;
+  color:white;
+  width:300px;
+  height:400px;
+  padding:20px;
+  padding-top:44px;
+  text-align:left;
+  line-height:22px;
+  white-space:normal;
+  top:0px;
+  font-size:14px;
+  transition: fadein 1s;
+  z-index:1;
+}
+
+.story .floatingText:hover {
+  opacity:1;
+}
+
+.storyArrow {
+  float:right;
+}
+
+.storyHeader {
+  margin-bottom:10px;
+}
+
+.streetTitle {
+  font-size:20px;
+  color:#999;
+  text-align:center;
+  line-height:40px;
+  font-weight:300;
+  letter-spacing:2px;
+  height:40px;
+}
+
+.streetTitleMain {
+  font-weight:400;
+  color:#ddd;
+}
+
+.streetTitleExtra {
+  display:none;
+}
+
+.closeButton {
+  color:#888;
+  float:right;
+  position:absolute;
+  border-radius:5px;
+  margin-top:4px;
+  right:20px;
+  line-height:20px;
+}
+
+.closeButton img {
+  padding-top:6px;
+  padding-bottom:3px;
+  height:20px;
+}
+
+
+.filmstrip {
+  overflow-x: scroll;
+  height:310px;
+  text-align:center;
+}
+
+.pulse {
+  top:0px;
+  position:absolute;
+  margin:12px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fbdd96;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(251,221,150, 0.4);
+  animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(251,221,150, 0.8);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(251,221,150, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(251,221,150, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(251,221,150, 0.8);
+    box-shadow: 0 0 0 0 rgba(251,221,150, 0.8);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(251,221,150, 0);
+      box-shadow: 0 0 0 10px rgba(251,221,150, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(251,221,150, 0);
+      box-shadow: 0 0 0 0 rgba(251,221,150, 0);
+  }
+}
+
+
+@media only screen and (min-width : 320px) {
+}
+
+@media only screen and (min-width : 768px) {
+  .streetTitleExtra {
+    display:inline;
+  }
+
+  .closeButton {
+    background-color:#333;
+    color:#888;
+    float:right;
+    position:absolute;
+    border-radius:5px;
+    padding-left:40px;
+    padding-right:40px;
+    margin-top:4px;
+    right:20px;
+    line-height:20px;
+  }
+
+  .closeButton img {
+    padding-top:6px;
+    padding-bottom:3px;
+    height:20px;
+  }
+
+  .imageContainer {
+    max-height:360px;
+  }
+
+  .filmstrip {
+    height:370px;
+  }
+
+  .imageContainer .image {
+    height:480px;
+  }
+}
+

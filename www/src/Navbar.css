@@ -1,0 +1,173 @@
+/* the phone mode, vertical or horizontal. */
+
+nav {
+  background-color: #222;
+  width:100%;
+  display:block;
+  height:44px;
+  line-height:44px;
+  font-weight:300;
+  letter-spacing:2px;
+  font-family: "Oswald";
+  color:#eee;
+}
+
+.mainTitle {
+  padding-right:20px;
+}
+
+.subTitle {
+  font-size:14px;
+  letter-spacing:1px;
+  color:#666;
+  padding-right:40px;
+  display:none;
+}
+
+.shareOnTwitter {
+  color:black;
+  letter-spacing:1px;
+  font-size:14px;
+  background:white;
+  border-radius:4px;
+  padding-left:6px;
+  padding-right:6px;
+  padding-top:2px;
+  padding-bottom:2px;
+}
+
+.shareOnTwitter a {
+  text-decoration:none;
+  color:black;
+
+}
+
+.locationSearch {
+  display: inline;
+}
+
+.hamburger {
+  float:right;
+  padding:0px;
+  height:44px;
+
+}
+
+.hamburger-box {
+  margin-top:10px;
+  margin-right:10px;
+}
+
+.locationSearch input {
+  border:none;
+  border-radius:5px;
+  background-color:black;
+  outline:none;
+  transition: all .5s ease;
+  width:20%;
+  background-image:url(/images/searchIcon.svg); 
+  background-size:10px 10px;
+  background-position:12px 6px;
+  background-repeat: no-repeat; 
+  padding-left:50px;
+  color:white;
+  vertical-align:top;
+  margin-top:8px;
+  height:60%;
+  font-size:14px;
+}
+
+.locationSearch input:focus {
+  width:25%;
+}
+
+.navOptionsVertical {
+  background-color:#555;
+  position:absolute;
+  z-index:99999;
+  top:44px;
+  width:100%;
+}
+
+.navOptionsHorizontal {
+  display:none;
+}
+
+@media only screen and (min-width : 1120px) {
+  .subTitle {
+    display: inline;
+  }
+}
+
+/* the desktop mode. */
+@media only screen and (min-width : 768px) {
+  .mainTitle {
+    padding-left:100px;
+  }
+
+  nav button.hamburger {
+    display:none;
+  }
+
+  .locationSearch input {
+    width:15%;
+  }
+
+  nav .navOptionsVertical {
+    display:none;
+  }
+
+  .navOptionsHorizontal {
+    display: inline;
+  }
+
+  .navOptionsHorizontal span {
+    margin-left:40px;
+  }
+
+
+  nav.navbarbig {
+    height:50px;
+    max-height:50px;
+    line-height:50px;
+    font-size:20px;
+    transition:max-height 300ms, font-size 300ms;
+    letter-spacing:3px;
+  }
+
+  nav.navbarbig .locationSearch input {
+    background-size:20px 20px;
+  }
+
+  nav.navbarsmall {
+    height:30px;
+    max-height:30px;
+    line-height:30px;
+    font-size:18px;
+    letter-spacing:2px;
+    transition:max-height 300ms, font-size 300ms;
+  }
+
+  nav.navbarbig .locationSearch input {
+    margin-top:9px;
+  }
+
+  nav.navbarsmall .locationSearch input {
+    margin-top:5px;
+  }
+
+  .noresults {
+    background-color:#d45454;
+    padding:3px;
+    border-radius:5px;
+    margin-left:12px;
+    font-weight:500;
+    letter-spacing:1px;
+  }
+
+  .twitter-share-button {
+    float:right;
+    padding-right:100px;
+  }
+}
+

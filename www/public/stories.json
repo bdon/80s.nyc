@@ -1,0 +1,525 @@
+{
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.98510921266623, 
+                    40.694323522579225
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "311 Bridge St", 
+                "bbl": [
+                    3, 
+                    2047, 
+                    7
+                ], 
+                "id": 0, 
+                "text": "In the 1980s, this 1847 Greek Revival church building (longtime home of the Brooklyn\u2019s oldest African-American congregation) sat in its original habitat, surrounded by other 19th century low-rise wood and brick buildings. Landmarked in 1981, it survived the 1990s development of neighboring blocks into Downtown Brooklyn\u2019s MetroTech complex and today still stands proudly among the surrounding high-rises, now part of NYU\u2019s School of Engineering."
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.994387592098, 
+                    40.6848578266889
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "267 Court Street", 
+                "bbl": [
+                    3, 
+                    408, 
+                    9
+                ], 
+                "id": 1, 
+                "text": "The old Lido Theater building, dating to the late 1930s, reborn in the 1970s as the Cobble Hill Cinemas. \u201cNow Playing\u201d in 1983 (check out the side of the marquee in the pic of the adjacent building): The Big Chill, A Christmas Story and Yentl."
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.97801467635225, 
+                    40.68440736688427
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "128 Flatbush Avenue", 
+                "bbl": [
+                    3, 
+                    926, 
+                    1
+                ], 
+                "id": 2, 
+                "text": "Hard to believe, but look carefully. VERY carefully. Hiding under the tawdry aluminum siding advertising the 1980s King Fried Chicken lies the landmark Times Plaza Control House in the middle of the intersection of Flatbush, Fourth and Atlantic Avenues. A Flemish Revival style kiosk built in 1908 by Heins & Lafarge as the entrance to the busy IRT subway station underneath, the building was restored to its original appearance in 2005 and now guards the past opposite the ultra-contemporary Barclays Center across the street."
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.99397518234171, 
+                    40.69477549721074
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "135 Montague Street", 
+                "bbl": [
+                    3, 
+                    243, 
+                    20
+                ], 
+                "id": 3, 
+                "text": "Change comes to old Brooklyn Heights. When a Burger King franchise was first proposed for this historic 1925 building in the landmark district in the mid 1970s, neighborhood opposition ran so strong that protesters wearing \u201cWhopper Stopper\u201d t-shirts picketed the corporate offices. They failed \u2013 and by the early 1980s, the neon flame-broiled burgers were shining in the windows here."
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.982410971466, 
+                    40.57541812512295
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "1501 Surf Avenue", 
+                "bbl": [
+                    3, 
+                    7074, 
+                    190
+                ], 
+                "id": 4, 
+                "text": "Coney Island\u2019s Thunderbolt roller coaster, made even more famous by Woody Allen\u2019s 1977 movie Annie Hall. Allen\u2019s character Alvy Singer explains to Diane Keaton\u2019s Annie that all his neuroses can be traced to the fact he was raised in a small shack right under the rattling tracks. This pic was shot just after the coaster closed down for good in 1982. After almost 20 years of abandonment, it was eventually torn down in 2000."
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.9335174823938, 
+                    40.7051078321978
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "261 Moore Street", 
+                "bbl": [
+                    3, 
+                    3101, 
+                    22
+                ], 
+                "id": 5, 
+                "text": "The Roberta\u2019s pizzeria building. The ambience hasn\u2019t changed a bit since 1983!"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.93303000643822, 
+                    40.689058872006456
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "173 Stuyvesant Avenue", 
+                "bbl": [
+                    3, 
+                    1626, 
+                    1
+                ], 
+                "id": 6, 
+                "text": "Fictional home of \u201cMookie\u201d from Spike Lee\u2019s Do The Right Thing, on the northeast corner of Quincy Street.  The entire 1980s period film was shot on Stuyvesant Avenue, although Sal\u2019s Famous Pizzeria was a set built on an empty lot on the block."
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -74.00310747998739, 
+                    40.73154038557723
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "273 Bleecker Street", 
+                "bbl": [
+                    1, 
+                    590, 
+                    9
+                ], 
+                "id": 7, 
+                "text": "Matt Umanov Guitars...an institution for vintage instruments since the 1960s\u2026seen here, less than two decades old."
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.99977718202582, 
+                    40.732848929976456
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "378 Avenue of the Americas", 
+                "bbl": [
+                    1, 
+                    553, 
+                    1
+                ], 
+                "id": 8, 
+                "text": "Branch of the Manufacturers Hanover Trust Bank (aka \u201cManny Hanny\u201d), which traced its lineage back to 1812 but was merged out of existence a few years after this pic was snapped. Today the site is\u2026a drugstore."
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.9993811850065, 
+                    40.7333653627664
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "396 Avenue of the Americas", 
+                "bbl": [
+                    1, 
+                    553, 
+                    9
+                ], 
+                "id": 9, 
+                "text": "B. Dalton bookseller, just a few doors down from a Barnes & Noble bookstore. Imagine an era when two bricks & mortar bookstores could thrive on the same block!"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.9999004710228, 
+                    40.7337423272205
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "403 Avenue of the Americas", 
+                "bbl": [
+                    1, 
+                    593, 
+                    13
+                ], 
+                "id": 10, 
+                "text": "Crazy Eddie discount electronics store. The slogan from their ubiquitous ads was \u201cHis Prices Are Insane!\u201d Turns out, Eddie wasn\u2019t crazy, just a financial fraud, and the chain went bankrupt by the late 1980s."
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.99027099373443, 
+                    40.73106173017737
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "71 Fourth Avenue", 
+                "bbl": [
+                    1, 
+                    555, 
+                    18
+                ], 
+                "id": 11, 
+                "text": "\u201cYou lookin\u2019 at me?!\u201d In 1980s NYC, no one seem to care much about blurring faces out of street photographs."
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.9880303795452, 
+                    40.73350615224527
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "126 East 14th Street", 
+                "bbl": [
+                    1, 
+                    559, 
+                    22
+                ], 
+                "id": 12, 
+                "text": "The famed Palladium, a 1920s Fox movie palace turned 1960s/70s concert hall called the Academy of Music, where bands like the Rolling Stones and The Clash made their NYC debuts, rechristened the Palladium and turned into one of the hottest 1980s clubs"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.9947383375966, 
+                    40.736163865596
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "14 West 14th Street", 
+                "bbl": [
+                    1, 
+                    577, 
+                    32
+                ], 
+                "id": 13, 
+                "text": "Branch of V.I.M. Jeans & Sneakers, whose discount locations exploded across NYC during the late 1970s and early 1980s during the designer jeans craze"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.9875044164602, 
+                    40.7221818326792
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "205 East Houston Street", 
+                "bbl": [
+                    1, 
+                    412, 
+                    21
+                ], 
+                "id": 14, 
+                "text": "Katz\u2019s Delicatessen. This is what the outside looked like in the 1980s When Harry Met Sally inside. Probably nothing has changed in 100 years except for the car out front."
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -74.00626947568173, 
+                    40.712019147293375
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "City Hall Park, 52 Chambers Street", 
+                "bbl": [
+                    1, 
+                    122, 
+                    1
+                ], 
+                "id": 15, 
+                "text": "City Hall in Manhattan. Many full-block municipal buildings didn\u2019t photograph well in this collection but City Hall comes out OK. Maybe you see Ed Koch asking from the steps, \u201cHow'm I doin'?\u201d"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -74.00743317919432, 
+                    40.71148822250231
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "15 Park Row", 
+                "bbl": [
+                    1, 
+                    90, 
+                    7
+                ], 
+                "id": 16, 
+                "text": "J&R Music World. If you were downtown, this was the place to go to buy LPs, cassettes and starting in the 80s, CDs."
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -74.01675688455053, 
+                    40.71916062600425
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "345 Chambers Street", 
+                "bbl": [
+                    1, 
+                    16, 
+                    12
+                ], 
+                "id": 17, 
+                "text": "The soon-to-be-home of Manhattan\u2019s prestigious Stuyvesant High School, announced in 1983 to be located at the corner of West Street and Chambers Street but not actually completed until 1993"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -74.012450481566, 
+                    40.70764972562901
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": null, 
+                "bbl": [
+                    1, 
+                    49, 
+                    1
+                ], 
+                "id": 18, 
+                "text": "Trinity Church"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -74.0105879459495, 
+                    40.7065317864794
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "Wall St & Broad St", 
+                "bbl": [
+                    1, 
+                    26, 
+                    1
+                ], 
+                "id": 19, 
+                "text": "NYSE? Or across street? Looks like shot take from high up on steps of Federal Hall\u2026photographer climbed on Washington\u2019s staute?"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -74.0113485425793, 
+                    40.7033988383127
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": null, 
+                "bbl": [
+                    1, 
+                    7, 
+                    35
+                ], 
+                "id": 20, 
+                "text": "Fraunces Tavern...one of Manhattan\u2019s oldest surviving buildings"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -74.0105879459495, 
+                    40.7065317864794
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "11 Wall Street", 
+                "bbl": [
+                    1, 
+                    26, 
+                    1
+                ], 
+                "id": 21, 
+                "text": "The New York Stock Exchange, taken from high up on the steps of Federal Hall across the street\u2026seems as if the photographer climbed up on Washington\u2019s statue to get the shot!"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.8745179530724, 
+                    40.7747487757825
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "94-00 Ditmars Boulevard", 
+                "bbl": [
+                    4, 
+                    926, 
+                    1
+                ], 
+                "id": 22, 
+                "text": "LaGuardia Airport\u2026a postcard shot of this enormous parcel. (Who knew that the airport has a street address?!)"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.860840200916, 
+                    40.7125053305634
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "89-70 Cooper Avenue", 
+                "bbl": [
+                    4, 
+                    3176, 
+                    45
+                ], 
+                "id": 23, 
+                "text": "Archie Bunker\u2019s house!"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.8551388986566, 
+                    40.7431068219564
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "52-02 108th Street", 
+                "bbl": [
+                    4, 
+                    1943, 
+                    51
+                ], 
+                "id": 24, 
+                "text": "The once-and-always famous Lemon Ice King of Corona"
+            }, 
+            "type": "Feature"
+        }, 
+        {
+            "geometry": {
+                "coordinates": [
+                    -73.9169550790889, 
+                    40.7610553587824
+                ], 
+                "type": "Point"
+            }, 
+            "properties": {
+                "addr": "31-01 Steinway Street", 
+                "bbl": [
+                    4, 
+                    678, 
+                    40
+                ], 
+                "id": 25, 
+                "text": "A classic Woolworth five-and-dime in Astoria"
+            }, 
+            "type": "Feature"
+        }
+    ], 
+    "type": "FeatureCollection"
+}

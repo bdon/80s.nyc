@@ -1,0 +1,7 @@
+#infostrip{
+  background-color:#222;
+  white-space: nowrap;
+  width: 100%;
+  display:inline-block;
+  vertical-align:top;
+}
