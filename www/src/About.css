@@ -9,3 +9,12 @@
 .aboutContainer a {
   color:#fbdd96;
 }
+
+.aboutContainer h3 {
+  margin-top:40px;
+}
+
+.aboutContainer p {
+  color:#ccc;
+  line-height:1.6;
+}

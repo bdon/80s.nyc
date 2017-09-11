@@ -17,7 +17,7 @@
 }
 
 .streetTitle:hover .closeButton {
-  background-color:#555555;
+  background-color:#4a3442;
 }
 
 .streetTitle:hover {
@@ -161,8 +161,7 @@
   }
 
   .closeButton {
-    background-color:#333;
-    color:#888;
+    background-color:#362630;
     float:right;
     position:absolute;
     border-radius:5px;

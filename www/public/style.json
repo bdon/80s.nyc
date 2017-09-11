@@ -41,7 +41,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#444"
+        "background-color": "#22181e"
       }
     },
     {
@@ -50,7 +50,7 @@
       "source": "80snyc",
       "source-layer": "coastgeojson",
       "paint": {
-        "fill-color": "#333333"
+        "fill-color": "#040304"
       }
     },
     {
@@ -70,7 +70,7 @@
       "source": "80snyc",
       "source-layer": "waterareasndjson",
       "paint": {
-        "fill-color": "#333"
+        "fill-color": "#040304"
       }
     },
     {
@@ -101,7 +101,7 @@
       "source": "80snyc",
       "source-layer": "landusagesndjson",
       "paint": {
-        "fill-color": "#666666"
+        "fill-color": "black"
       },
       "filter":["in","type","school","university"]
     },
@@ -116,7 +116,7 @@
             "type": "identity",
             "property": "height"
         },
-        "fill-extrusion-opacity": 0.3
+        "fill-extrusion-opacity": 0.2
       }
     },
     {
@@ -146,7 +146,7 @@
             [17,8]
           ]
         },
-        "line-color": "#555"
+        "line-color": "#362630"
       }
     },
     {
@@ -176,7 +176,7 @@
             [17,8]
           ]
         },
-        "line-color": "#555"
+        "line-color": "#362630"
       }
     },
     {
@@ -191,7 +191,7 @@
             [17,6]
           ]
         },
-        "line-color": "#333333"
+        "line-color": "#111"
       },
       "filter":["all",["in","type","rail","subway"],["!=","service","siding"]],
       "minzoom":14
@@ -206,7 +206,7 @@
             [17,3]
           ]
         },
-        "line-color": "#888888",
+        "line-color": "#333",
         "line-dasharray":[1,1]
       }
     },
@@ -255,36 +255,15 @@
         "text-font": [
           "Open Sans Light"
         ],
-        "text-size":12,
+        "text-size":13,
         "symbol-placement":"line"
       },
       "paint":{
-        "text-color":"#ccc",
-        "text-halo-color":"#444",
-        "text-halo-width":1.8
+        "text-color":"#eee",
+        "text-halo-color":"#22181e",
+        "text-halo-width":2.2
       },
       "minzoom":14
-    },
-    {
-      "id": "amenities_labels",
-      "type": "symbol",
-      "source": "80snyc",
-      "source-layer": "amenitiesndjson",
-      "layout": {
-        "text-field": "{name}",
-        "text-font": [
-          "Open Sans Light"
-        ],
-        "text-size":12,
-        "text-padding":20
-      },
-      "paint":{
-        "text-color":"#aaa",
-        "text-halo-color":"#444",
-        "text-halo-width":2
-      },
-      "minzoom":15,
-      "filter":["in","type","university","school","library"]
     },
     {
       "id": "parks_labels",
@@ -296,11 +275,11 @@
         "text-font": [
           "Open Sans Light"
         ],
-        "text-size":10
+        "text-size":11
       },
       "paint":{
-        "text-color":"black",
-        "text-halo-color":"#666",
+        "text-color":"white",
+        "text-halo-color":"#22181e",
         "text-halo-width":1.0
       },
       "minzoom":14,

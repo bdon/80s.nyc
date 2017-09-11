@@ -1,7 +1,7 @@
 /* the phone mode, vertical or horizontal. */
 
 nav {
-  background-color: #222;
+  background-color: #040304;
   width:100%;
   display:block;
   height:44px;
@@ -10,6 +10,7 @@ nav {
   letter-spacing:2px;
   font-family: "Oswald";
   color:#eee;
+  vertical-align:middle;
 }
 
 .mainTitle {
@@ -17,10 +18,12 @@ nav {
 }
 
 .subTitle {
+  line-height:54px;
   font-size:14px;
   letter-spacing:1px;
   color:#666;
   padding-right:40px;
+  vertical-align:top;
   display:none;
 }
 
@@ -32,8 +35,16 @@ nav {
   border-radius:4px;
   padding-left:6px;
   padding-right:6px;
-  padding-top:2px;
-  padding-bottom:2px;
+  vertical-align:top;
+  line-height:54px;
+}
+
+nav.navbarsmall .shareOnTwitter {
+  line-height:35px;
+}
+
+nav.navbarsmall .subTitle {
+  line-height:33px;
 }
 
 .shareOnTwitter a {
@@ -91,6 +102,7 @@ nav {
 
 .navOptionsHorizontal {
   display:none;
+  vertical-align:middle;
 }
 
 @media only screen and (min-width : 1120px) {
