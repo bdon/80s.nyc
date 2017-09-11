@@ -1,0 +1,9 @@
+Fiona
+shapely
+psycopg2
+requests
+Pillow
+progressbar2
+numpy
+pytest
+pyyaml
