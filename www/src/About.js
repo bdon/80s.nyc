@@ -65,9 +65,15 @@ class About extends React.Component {
             WHO MADE THIS?
           </h3>
           <ul>
-            <li>Brandon Liu (<a href="https://twitter.com/bdon">@bdon</a>) - geospatial; programming; cartography</li>
+            <li>Brandon Liu (<a href="https://twitter.com/bdon">@bdon</a>) - GIS and programming, source for this site available <a href="https://github.com/bdon/80s.nyc">here</a>.</li>
             <li>Jeremy Lechtzin (<a href="https://twitter.com/jeremylechtzin">@jeremylechtzin</a>) - history; research; data collection. Writes about historic Brooklyn through data at <a href="oldbrooklynheights.com">oldbrooklynheights.com</a></li>
           </ul>
+          <h3>
+            COPYRIGHT NOTICE
+          </h3>
+          <p>
+            The photographic database with which this source code is designed to interface contains low-resolution images which are the property of The City of New York Department of Records - Municipal Archives. Any use of these images is subject to terms and conditions which may be imposed from time to time by The City of New York. This includes any derivative images created or used by this code. The image database may not be used for any commercial purpose without appropriate permission. Prints or high-resolution images should be ordered from the Municipal Archives via this page, which describes the conditions for their use: http://www.nyc.gov/html/records/html/gallery/orderform.shtml
+          </p>
           <h3>
             OTHER MAP DATA
           </h3>
