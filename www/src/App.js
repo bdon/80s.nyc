@@ -159,9 +159,9 @@ class App extends React.Component {
         minZoom:9,
         maxBounds:[[-75.9, 40.0],[-72.4, 42.0]],
         center:startingCenter,
-        zoom:startingZoom,
-        bearing:29.1
+        zoom:startingZoom
     })
+    map.addControl(new mapboxgl.NavigationControl())
     this.map = map
     if (this.hash.lastParsed && this.hash.lastParsed.filmstripOpen) {
       this.map.on("load", () => {
