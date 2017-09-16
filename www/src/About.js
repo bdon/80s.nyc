@@ -66,7 +66,7 @@ class About extends React.Component {
           </h3>
           <ul>
             <li>Brandon Liu (<a href="https://twitter.com/bdon">@bdon</a>) - GIS and programming, source for this site available <a href="https://github.com/bdon/80s.nyc">here</a>.</li>
-            <li>Jeremy Lechtzin (<a href="https://twitter.com/jeremylechtzin">@jeremylechtzin</a>) - history; research; data collection. Writes about historic Brooklyn through data at <a href="oldbrooklynheights.com">oldbrooklynheights.com</a></li>
+            <li>Jeremy Lechtzin (<a href="https://twitter.com/jeremylechtzin">@jeremylechtzin</a>) - history; research; data collection. Writes about historic Brooklyn through data at <a href="https://oldbrooklynheights.com">oldbrooklynheights.com</a></li>
           </ul>
           <h3>
             COPYRIGHT NOTICE
