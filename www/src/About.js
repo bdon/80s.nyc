@@ -72,7 +72,10 @@ class About extends React.Component {
             COPYRIGHT NOTICE
           </h3>
           <p>
-            The photographic database with which this source code is designed to interface contains low-resolution images which are the property of The City of New York Department of Records - Municipal Archives. Any use of these images is subject to terms and conditions which may be imposed from time to time by The City of New York. This includes any derivative images created or used by this code. The image database may not be used for any commercial purpose without appropriate permission. Prints or high-resolution images should be ordered from the Municipal Archives via <a href="http://www.nyc.gov/html/records/html/gallery/orderform.shtml">this page, which describes the conditions for their use</a>. 
+            The photographic database that this source code is designed to interface with contains low-resolution images which are the property of the New York City Municipal Archives. Any use of these images is subject to <a href="http://www1.nyc.gov/site/records/about/terms-and-conditions.page">terms and conditions found here</a>. 
+          </p>
+          <p>
+            This includes any derivative images created or used by this code. The image database may not be used for any commercial purpose without appropriate permission. Prints or high-resolution images should be ordered from the Municipal Archives via <a href="http://www.nyc.gov/html/records/html/gallery/orderform.shtml">this page, which describes the conditions for their use</a>.
           </p>
           <h3>
             OTHER MAP DATA
