@@ -1,4 +1,5 @@
 import os
+import csv
 import progressbar
 import psycopg2
 import psycopg2.extras
@@ -13,6 +14,16 @@ cur2 = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 cur.execute("select count(*) from filmstrips;")
 strips = cur.fetchone()['count']
 bar = progressbar.ProgressBar(max_value=strips)
+
+has_photos = {}
+with open('classify/manifest.csv','r') as manifest:
+    reader = csv.reader(manifest)
+    for row in reader:
+        bbl = row[1]
+        has_photo = (row[3] == 'True')
+        has_photos[bbl] = has_photo
+
+print len(has_photos)
 
 # LION Data Dictionary https://www1.nyc.gov/assets/planning/download/pdf/data-maps/open-data/lion_metadata.pdf?r=17a
 
@@ -63,8 +74,8 @@ def street_names(fsid):
 
 for i,row in enumerate(cur):
     def lot_id_to_obj(lot_id,block_id,boro,i):
-        photo_path = 'www-data/photos/{0}/{1:05d}/{2:04d}.jpg'.format(boro,int(block_id),int(lot_id))
-        has_photo = os.path.isfile(photo_path)
+        bbl = '{0}{1:05d}{2:04d}'.format(boro,int(block_id),int(lot_id))
+        has_photo = (bbl in has_photos and has_photos[bbl])
         return {'photo':has_photo,'lot_id':lot_id,'i':i}
 
     bar.update(i)
