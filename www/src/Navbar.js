@@ -11,13 +11,14 @@ class Navbar extends React.Component {
   search = (e) => {
     const navbarComponent = this
     e.preventDefault()
-    fetch('http://nominatim.openstreetmap.org/search?format=json&viewbox=-73.7,40.5,-74.3,40.9&bounded=1&q=' + this.inputref.value).then(function(response){
+    fetch('https://geosearch.planninglabs.nyc/v1/search?site=80s.nyc&text=' + this.inputref.value).then(function(response){
       response.json().then(function(val) {
+        var geometry = val.features[0].geometry
         if (val.length === 0) {
           navbarComponent.setState({noResults:true})
         } else {
           navbarComponent.setState({noResults:false})
-          navbarComponent.props.setMarkerViaLatLon(parseFloat(val[0].lat),parseFloat(val[0].lon))
+          navbarComponent.props.setMarkerViaLatLon(geometry.coordinates[1],geometry.coordinates[0])
         }
       })
     })
