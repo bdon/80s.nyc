@@ -84,6 +84,7 @@ class About extends React.Component {
             PLUTO and Digital Tax Map.
             MapboxGL and Tippecanoe.
             Base map data © OpenStreetMap contributors.
+            Geosearch via <a href="http://geosearch.planninglabs.nyc">NYC Planning Labs</a>.
           </p>
         </div>
         <div className="streetTitle" onClick={this.props.closeInfostrip}>
