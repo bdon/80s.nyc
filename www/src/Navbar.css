@@ -23,7 +23,7 @@ nav {
   letter-spacing:1px;
   color:#666;
   padding-right:40px;
-  vertical-align:middle;
+  vertical-align:top;
   display:none;
 }
 
@@ -40,11 +40,24 @@ nav {
 }
 
 nav.navbarsmall .shareOnTwitter {
-  line-height:35px;
+  line-height:30px;
 }
 
 nav.navbarsmall .subTitle {
   line-height:33px;
+  vertical-align:top;
+}
+
+nav.navbarsmall .mainTitle {
+  vertical-align:top;
+} 
+
+nav.navbarsmall .navOptionsHorizontal span {
+  vertical-align:top;
+}
+
+nav.navbarsmall .geosearchWrapper {
+  line-height:30px;
 }
 
 .shareOnTwitter a {
@@ -53,9 +66,6 @@ nav.navbarsmall .subTitle {
 
 }
 
-.locationSearch {
-  display: inline-block;
-}
 
 .geosearchMenu {
   position: absolute;
@@ -90,9 +100,10 @@ nav.navbarsmall .subTitle {
 }
 
 input.locationSearch {
+  display: inline-block;
   border:none;
   border-radius:5px;
-  background-color:black;
+  background-color:#222;
   outline:none;
   transition: all .5s ease;
   background-image:url(/images/searchIcon.svg); 
@@ -100,10 +111,12 @@ input.locationSearch {
   background-position:12px 6px;
   background-repeat: no-repeat; 
   padding-left:50px;
+  padding-top:2px;
+  padding-bottom:2px;
   color:#aaa;
   vertical-align:middle;
   font-size:16px;
-  width:100%;
+  width:90%;
 }
 
 .geosearchWrapper {
