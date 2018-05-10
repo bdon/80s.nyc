@@ -18,12 +18,12 @@ nav {
 }
 
 .subTitle {
-  line-height:54px;
+  line-height:60px;
   font-size:14px;
   letter-spacing:1px;
   color:#666;
   padding-right:40px;
-  vertical-align:top;
+  vertical-align:middle;
   display:none;
 }
 
@@ -33,10 +33,10 @@ nav {
   font-size:14px;
   background:white;
   border-radius:4px;
-  padding-left:6px;
-  padding-right:6px;
-  vertical-align:top;
-  line-height:54px;
+  padding-left:10px;
+  padding-right:10px;
+  vertical-align:bottom;
+  line-height:60px;
 }
 
 nav.navbarsmall .shareOnTwitter {
@@ -54,7 +54,27 @@ nav.navbarsmall .subTitle {
 }
 
 .locationSearch {
-  display: inline;
+  display: inline-block;
+}
+
+.geosearchMenu {
+  position: absolute;
+  box-sizing: border-box;
+  z-index:9999;
+  font-size:12px;
+  background-color:black;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:12px;
+  padding-top:12px;
+  font-family: "Open Sans";
+  line-height:2em;
+  letter-spacing:0em;
+  color: #aaa;
+}
+
+.item-highlighted {
+  background-color:#2c1f27;
 }
 
 .hamburger {
@@ -69,27 +89,26 @@ nav.navbarsmall .subTitle {
   margin-right:10px;
 }
 
-.locationSearch input {
+input.locationSearch {
   border:none;
   border-radius:5px;
   background-color:black;
   outline:none;
   transition: all .5s ease;
-  width:20%;
   background-image:url(/images/searchIcon.svg); 
   background-size:10px 10px;
   background-position:12px 6px;
   background-repeat: no-repeat; 
   padding-left:50px;
-  color:white;
-  vertical-align:top;
-  margin-top:8px;
-  height:60%;
-  font-size:14px;
+  color:#aaa;
+  vertical-align:middle;
+  font-size:16px;
+  width:100%;
 }
 
-.locationSearch input:focus {
-  width:25%;
+.geosearchWrapper {
+  width:30%;
+  line-height:30px;
 }
 
 .navOptionsVertical {
@@ -121,8 +140,9 @@ nav.navbarsmall .subTitle {
     display:none;
   }
 
-  .locationSearch input {
-    width:15%;
+  .geosearchWrapper {
+    width:30%;
+    line-height:60px;
   }
 
   nav .navOptionsVertical {
@@ -139,16 +159,16 @@ nav.navbarsmall .subTitle {
 
 
   nav.navbarbig {
-    height:50px;
-    max-height:50px;
-    line-height:50px;
+    height:60px;
+    max-height:60px;
+    line-height:60px;
     font-size:20px;
     transition:max-height 300ms, font-size 300ms;
     letter-spacing:3px;
   }
 
-  nav.navbarbig .locationSearch input {
-    background-size:20px 20px;
+  nav.navbarbig input.locationSearch {
+    background-size:10px 10px;
   }
 
   nav.navbarsmall {
@@ -158,14 +178,6 @@ nav.navbarsmall .subTitle {
     font-size:18px;
     letter-spacing:2px;
     transition:max-height 300ms, font-size 300ms;
-  }
-
-  nav.navbarbig .locationSearch input {
-    margin-top:9px;
-  }
-
-  nav.navbarsmall .locationSearch input {
-    margin-top:5px;
   }
 
   .noresults {

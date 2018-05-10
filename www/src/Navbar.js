@@ -1,4 +1,5 @@
 import React from 'react'
+import {Geosearch} from './Geosearch.js'
 import './Navbar.css'
 import './hamburger.css'
 
@@ -34,9 +35,7 @@ class Navbar extends React.Component {
       <nav className={clsname}>
         <span className="mainTitle">80s.NYC</span>
         <span className="subTitle">STREET VIEW OF 1980S NEW YORK</span>
-        <form onSubmit={this.search} className="locationSearch">
-          <input ref={(input) => { this.inputref = input }} placeholder="Search..."/>
-        </form>
+        <Geosearch onSelect={this.props.setMarkerViaLatLon}/>
         {this.state.noResults ? <span className="noresults">No results</span> : null }
         <div className="navOptionsHorizontal">
           <span onClick={() => this.props.openStories()}>STORIES</span>
