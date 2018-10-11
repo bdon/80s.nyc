@@ -14,7 +14,7 @@
       "tiles":["http://files.80s.nyc/tiles/{z}/{x}/{y}.pbf"],
       "minzoom":9,
       "maxzoom":14,
-      "attribution":"© OpenStreetMap contributors"
+      "attribution":"© <a href=\"https://www.openstreetmap.org\" target=\"_blank\"> OpenStreetMap</a> contributors"
     },
     "stories": {
       "type":"geojson",
