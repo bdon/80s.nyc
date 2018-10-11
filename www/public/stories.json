@@ -429,14 +429,14 @@
                 "type": "Point"
             }, 
             "properties": {
-                "addr": "11 Wall Street", 
+                "addr": "23 Wall Street",
                 "bbl": [
                     1, 
                     26, 
                     1
                 ], 
                 "id": 21, 
-                "text": "The New York Stock Exchange, taken from high up on the steps of Federal Hall across the street\u2026seems as if the photographer climbed up on Washington\u2019s statue to get the shot!"
+                "text": "23 Wall St, or \"The Corner\", taken from high up on the steps of Federal Hall across the street\u2026seems as if the photographer climbed up on Washington\u2019s statue to get the shot!"
             }, 
             "type": "Feature"
         }, 
