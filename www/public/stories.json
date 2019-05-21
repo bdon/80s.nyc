@@ -369,7 +369,7 @@
                 "type": "Point"
             }, 
             "properties": {
-                "addr": null, 
+                "addr": "Trinity Church", 
                 "bbl": [
                     1, 
                     49, 
@@ -409,7 +409,7 @@
                 "type": "Point"
             }, 
             "properties": {
-                "addr": null, 
+                "addr": "Fraunces Tavern", 
                 "bbl": [
                     1, 
                     7, 
