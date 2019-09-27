@@ -1,4 +1,4 @@
-const FILE_URL = process.env.REACT_APP_FILE_URL || "http://files.80s.nyc"
+const FILE_URL = process.env.REACT_APP_FILE_URL || "https://80s-nyc.nyc3.digitaloceanspaces.com"
 
 function cartesianDistance(x0,y0,x1,y1) {
   const a = x0 - x1
