@@ -63,14 +63,12 @@ class Filmstrip extends React.Component {
 
     function StreetTitle(props) {
       const fprops = props.filmstrip.properties
-      return (<div className='streetTitle' onClick={() => props.closeInfostrip()}>
-           <span className="streetTitleMain">{fprops.sname}</span>
+      return (<div className='pa3' onClick={() => props.closeInfostrip()}>
+           <span className="">{fprops.sname}</span>
           { fprops.lname && fprops.rname ?
             <span className="streetTitleExtra"> between {fprops.lname} and {fprops.rname}</span> : null
           }
-          <span className="closeButton">
-            <img src='/images/closeButton.svg' alt="close"></img>            
-          </span>
+          <span className="fr">CLOSE</span>
         </div>)
     }
 

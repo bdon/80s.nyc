@@ -188,7 +188,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="app-root">
+      <div className="app-root avenir">
         <ReactCSSTransitionGroup
           className="transgroup"
           component="div"

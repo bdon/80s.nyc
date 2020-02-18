@@ -84,10 +84,9 @@ class About extends React.Component {
           Base map data © OpenStreetMap contributors.
           Geosearch via <a href="http://geosearch.planninglabs.nyc">NYC Planning Labs</a>.
         </p>
-        <div className="streetTitle" onClick={this.props.closeInfostrip}>
-          <span className="closeButton">
-            <img src='/images/closeButton.svg' alt="close"></img>            
-          </span>
+        <div onClick={this.props.closeInfostrip}>
+          <span className="dark-gray">ABOUT</span>
+          <span className="pv1 fr">CLOSE</span>
         </div>
       </div>
     );

@@ -1,6 +1,5 @@
 import React from 'react';
 import {imageUrl} from './Utils.js'
-import './Stories.css'
 
 class Stories extends React.Component {
   openStory = (story) => {
@@ -14,24 +13,23 @@ class Stories extends React.Component {
       const stories = props.stories.map(function(story) {
         const bbl = story.properties.bbl
         const imgsrc = imageUrl(bbl[0],bbl[1],bbl[2])
-        return (<div className="storyImage" key={story.properties.id}>
-          <img src={imgsrc} alt={story.properties.id} onClick={() => storiesComponent.openStory(story)}/>
+        return (<div className="dib" key={story.properties.id}>
+          <img className="h5 mr2 mb2" src={imgsrc} alt={story.properties.id} onClick={() => storiesComponent.openStory(story)}/>
           </div>)
       })
 
-      return (<div className="storiesContainer">{stories}</div>)
+      return (<div className="overflow-y-scroll">{stories}</div>)
     }
 
     return (
-      <div id="stories">
-        <h2>CLICK A PHOTO TO VIEW ITS STORY.</h2>
+      <div className="ws-normal w-100">
+        <div className="pa3 f2">Click a photo to view its story.</div>
         { this.props.storyIndex ? <StoryList 
           stories={this.props.storyIndex.stories} 
           /> : 'Stories not yet loaded.' }
-        <div className="streetTitle" onClick={() => this.props.closeInfostrip()}>
-          <span className="closeButton">
-            <img src='/images/closeButton.svg' alt="close"></img>            
-          </span>
+        <div className="pa3" onClick={() => this.props.closeInfostrip()}>
+          <span className="dark-gray">STORIES</span>
+          <span className="fr">CLOSE</span>
         </div>
       </div>
     );

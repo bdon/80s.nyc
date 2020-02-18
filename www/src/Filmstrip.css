@@ -16,10 +16,6 @@
   font-family: "Oswald";
 }
 
-.streetTitle:hover .closeButton {
-  background-color:#4a3442;
-}
-
 .streetTitle:hover {
   cursor: pointer;
 }
@@ -69,39 +65,8 @@
   margin-bottom:10px;
 }
 
-.streetTitle {
-  font-size:20px;
-  color:#999;
-  text-align:center;
-  line-height:40px;
-  font-weight:300;
-  letter-spacing:2px;
-  height:40px;
-}
-
-.streetTitleMain {
-  font-weight:400;
-  color:#ddd;
-}
-
 .streetTitleExtra {
   display:none;
-}
-
-.closeButton {
-  color:#888;
-  float:right;
-  position:absolute;
-  border-radius:5px;
-  margin-top:4px;
-  right:20px;
-  line-height:20px;
-}
-
-.closeButton img {
-  padding-top:6px;
-  padding-bottom:3px;
-  height:20px;
 }
 
 
@@ -158,24 +123,6 @@
 @media only screen and (min-width : 768px) {
   .streetTitleExtra {
     display:inline;
-  }
-
-  .closeButton {
-    background-color:#362630;
-    float:right;
-    position:absolute;
-    border-radius:5px;
-    padding-left:40px;
-    padding-right:40px;
-    margin-top:4px;
-    right:20px;
-    line-height:20px;
-  }
-
-  .closeButton img {
-    padding-top:6px;
-    padding-bottom:3px;
-    height:20px;
   }
 
   .imageContainer {

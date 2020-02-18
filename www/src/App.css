@@ -41,17 +41,6 @@ html, body
     padding: 0;
     background-color:black;
     color:white;
-    font-family: 'Open Sans', sans-serif;
-}
-
-h2 {
-  font-family: "Oswald";
-  letter-spacing:2px;
-}
-
-h3 {
-  font-family: "Oswald";
-  letter-spacing:2px;
 }
 
 #root {
