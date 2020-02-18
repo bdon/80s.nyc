@@ -66,7 +66,7 @@ class Filmstrip extends React.Component {
       return (<div className='pa3' onClick={() => props.closeInfostrip()}>
            <span className="">{fprops.sname}</span>
           { fprops.lname && fprops.rname ?
-            <span className="streetTitleExtra"> between {fprops.lname} and {fprops.rname}</span> : null
+            <span className="dn di-l"> between {fprops.lname} and {fprops.rname}</span> : null
           }
           <span className="fr">CLOSE</span>
         </div>)

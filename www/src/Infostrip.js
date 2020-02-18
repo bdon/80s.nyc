@@ -2,14 +2,13 @@ import React from 'react'
 import {Stories} from './Stories.js'
 import {About} from './About.js'
 import {Filmstrip} from './Filmstrip.js'
-import './Infostrip.css'
 
 class Infostrip extends React.Component {
 
   render() {
     return (
       <div className="nogap">
-        <div id="infostrip">
+        <div className="nowrap dib w-100 v-top">
         { this.props.infoState === 'filmstrip' ? <Filmstrip
           setFocusedLot={this.props.setFocusedLot}
           focusedLot={this.props.focusedLot}

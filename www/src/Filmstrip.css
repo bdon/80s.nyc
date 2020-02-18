@@ -12,14 +12,6 @@
   -webkit-user-drag: none;
 }
 
-.streetTitle {
-  font-family: "Oswald";
-}
-
-.streetTitle:hover {
-  cursor: pointer;
-}
-
 .imageContainer {
   display:inline-block;
   position:relative;
@@ -64,11 +56,6 @@
 .storyHeader {
   margin-bottom:10px;
 }
-
-.streetTitleExtra {
-  display:none;
-}
-
 
 .filmstrip {
   overflow-x: scroll;
@@ -116,15 +103,10 @@
   }
 }
 
-
 @media only screen and (min-width : 320px) {
 }
 
 @media only screen and (min-width : 768px) {
-  .streetTitleExtra {
-    display:inline;
-  }
-
   .imageContainer {
     max-height:360px;
   }

@@ -3,7 +3,7 @@ import React from 'react';
 class About extends React.Component {
   render() {
     return (
-      <div id="about" className="pa3 lh-copy">
+      <div className="pa3 lh-copy ws-normal">
         <h2>ABOUT</h2>
         <p>
           80s.nyc is a map-based full street view of 1980s New York City, organizing photographs from the New York City Municipal Archives’ Department of Finance Collection into an easy-to-browse glimpse of the streetscape 30 years ago. 

@@ -60,9 +60,6 @@ html, body
   height:100%;
 }
 
-#about {
-  white-space: normal;
-}
 
 ::-webkit-scrollbar {
   background: black;
