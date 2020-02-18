@@ -13,9 +13,8 @@ class Geosearch extends React.Component {
   render() {
     return (
         <Autocomplete 
-          wrapperStyle={{'display':'inline-block'}}
-          wrapperProps={{'className':'mr3'}}
-          inputProps={{ 'placeholder':'Search...','className':'input-reset f6 ba b--black pa1'}}
+          wrapperProps={{'className':'dib mr3'}}
+          inputProps={{ 'placeholder':'Search by address...','className':'bg-black input-reset w5 f6 ba b--dark-gray pa1 white'}}
           value={this.state.value}
           items={this.state.unitedStates}
           getItemValue={(item) => item.properties.label}
@@ -40,13 +39,13 @@ class Geosearch extends React.Component {
             }, 500)
           }}
           renderMenu={children => (
-            <div className="geosearchMenu">
+            <div className="pa3 f5 z-999 absolute lh-copy bg-black">
               {children}
             </div>
           )}
           renderItem={(item, isHighlighted) => (
             <div
-              className={`item ${isHighlighted ? 'item-highlighted' : ''}`}
+              className={`pa1 item ${isHighlighted ? 'bg-gray' : ''}`}
               key={item.properties.id}
             >{item.properties.label.replace(", New York, NY, USA","")}</div>
           )}
