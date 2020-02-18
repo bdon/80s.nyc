@@ -8,75 +8,14 @@
 }
 
 #intro {
-  color:white;
   background-color:#2c1f27;
-  padding:30px;
-  position:relative;
-  max-width:500px;
-  height:50%;
   text-align:center;
-  min-height:500px;
-  margin:44px auto;
 }
 
 #intro .introGif {
-  margin-top:20px;
   display:block;
   margin-left:auto;
   margin-right:auto;
   height:25%;
-}
-
-#intro p {
-  color:#bbb;
-  font-size:14px;
-}
-
-#intro strong {
-  font-weight:500;
-}
-
-#intro a {
-  font-family:"Oswald";
-  border:1px solid #aaa;
-  padding:8px;
-  border-radius:8px;
-  letter-spacing:2px;
-  display:block;
-  bottom:20px;
-  width:60%;
-  margin-top:30px;
-  margin-left: auto;
-  margin-right:auto;
-  color:#ccc;
-}
-
-#intro a:hover {
-  background-color:#333;
-  color:#fff;
-}
-
-#intro h1 {
-  font-family: "Oswald";
-  text-transform:uppercase;
-  letter-spacing:2px;
-  display:none;
-}
-
-#intro h2 {
-  font-size:18px;
-  color:#ccc;
-  margin:0px;
-  padding-bottom:24px;
-}
-
-@media only screen and (min-width : 768px) {
-  #intro {
-    margin:100px auto;
-  }
-
-  #intro h1 {
-    display:block;
-  }
 }
 

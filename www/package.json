@@ -11,7 +11,8 @@
     "react-addons-css-transition-group": "15.5.2",
     "react-dom": "^15.4.2",
     "whatwg-fetch": "^2.0.2",
-    "react-autocomplete": "^1.8.1"
+    "react-autocomplete": "^1.8.1",
+    "tachyons": "^4.11.1"
   },
   "scripts": {
     "start": "react-scripts start",
