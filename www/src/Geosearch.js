@@ -14,8 +14,8 @@ class Geosearch extends React.Component {
     return (
         <Autocomplete 
           wrapperStyle={{'display':'inline-block'}}
-          wrapperProps={{'className':'geosearchWrapper'}}
-          inputProps={{ 'placeholder':'Search...','className':'locationSearch'}}
+          wrapperProps={{'className':'mr3'}}
+          inputProps={{ 'placeholder':'Search...','className':'input-reset f6 ba b--black pa1'}}
           value={this.state.value}
           items={this.state.unitedStates}
           getItemValue={(item) => item.properties.label}

@@ -30,27 +30,29 @@ class Navbar extends React.Component {
   }
 
   render() {
-    const clsname = this.props.showInfostrip ? 'navbarsmall' : 'navbarbig'
+    const clsnames = (this.props.showInfostrip ? ' navbarsmall' : ' navbarbig')
     return (
-      <nav className={clsname}>
-        <span className="mainTitle">80s.NYC</span>
-        <span className="subTitle">STREET VIEW OF 1980S NEW YORK</span>
-        <Geosearch onSelect={this.props.setMarkerViaLatLon}/>
-        {this.state.noResults ? <span className="noresults">No results</span> : null }
-        <div className="navOptionsHorizontal">
-          <span onClick={() => this.props.openStories()}>STORIES</span>
-          <span onClick={() => this.props.openAbout()}>ABOUT</span>
-          <span className="shareOnTwitter" onClick={() => this.props.openTweet()}>SHARE ON TWITTER</span>
+      <nav className={clsnames}>
+        <div className="pa3">
+          <span className="mr3 f3">80s.NYC</span>
+          <span className="subTitle gray mr3">STREET VIEW OF 1980S NEW YORK</span>
+          <Geosearch onSelect={this.props.setMarkerViaLatLon}/>
+          {this.state.noResults ? <span className="noresults">No results</span> : null }
+          <div className="navOptionsHorizontal">
+            <span className="mr3" onClick={() => this.props.openStories()}>STORIES</span>
+            <span className="mr3" onClick={() => this.props.openAbout()}>ABOUT</span>
+            <span className="" onClick={() => this.props.openTweet()}>SHARE ON TWITTER</span>
+          </div>
+          <button className={"hamburger hamburger--spin"+(this.state.menuOpen ? ' is-active':'')} type="button" onClick={this.toggleHamburger}>
+            <span className="hamburger-box">
+              <span className="hamburger-inner"></span>
+            </span>
+          </button>
         </div>
-        <button className={"hamburger hamburger--spin"+(this.state.menuOpen ? ' is-active':'')} type="button" onClick={this.toggleHamburger}>
-          <span className="hamburger-box">
-            <span className="hamburger-inner"></span>
-          </span>
-        </button>
         { this.state.menuOpen ? 
-        <div className="navOptionsVertical" key="navOptionsVertical">
-          <div onClick={() => {this.props.openStories(); this.toggleHamburger()} }>STORIES</div>
-          <div onClick={() => {this.props.openAbout(); this.toggleHamburger()} }>ABOUT</div>
+        <div className="navOptionsVertical bg-black f4" key="navOptionsVertical">
+          <div className="pa3" onClick={() => {this.props.openStories(); this.toggleHamburger()} }>STORIES</div>
+          <div className="pa3" onClick={() => {this.props.openAbout(); this.toggleHamburger()} }>ABOUT</div>
         </div> : null }
       </nav>
     )
