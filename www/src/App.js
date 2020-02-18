@@ -1,7 +1,6 @@
 /* global mapboxgl, turf */
 
 import React from 'react'
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import createHistory from 'history/createBrowserHistory'
 //import {FILE_URL} from './Utils.js'
 import {StoryIndex} from './StoryIndex.js'
@@ -189,28 +188,21 @@ class App extends React.Component {
   render() {
     return (
       <div className="app-root avenir">
-        <ReactCSSTransitionGroup
-          className="transgroup"
-          component="div"
-          transitionName="showfilm"
-          transitionEnterTimeout={300}
-          transitionLeaveTimeout={300}>
-          <Navbar key="navbar"
-            showInfostrip={this.state.infoState != null} 
-            openStories={this.openStories}
-            openAbout={this.openAbout}
-            openTweet={this.openTweet}
-            setMarkerViaLatLon={this.setMarkerViaLatLon}
-          />
-          { this.state.infoState != null ? <Infostrip 
-            infoState={this.state.infoState}
-            closeInfostrip={this.closeInfostripFunc}
-            setMarkerViaLatLon={this.setMarkerViaLatLon}
-            filmstrip={this.state.filmstrip}
-            focusedLot={this.state.focusedLot}
-            storyIndex={this.state.storyIndex}
-          /> : null }
-        </ReactCSSTransitionGroup>
+        <Navbar key="navbar"
+          showInfostrip={this.state.infoState != null} 
+          openStories={this.openStories}
+          openAbout={this.openAbout}
+          openTweet={this.openTweet}
+          setMarkerViaLatLon={this.setMarkerViaLatLon}
+        />
+        { this.state.infoState != null ? <Infostrip 
+          infoState={this.state.infoState}
+          closeInfostrip={this.closeInfostripFunc}
+          setMarkerViaLatLon={this.setMarkerViaLatLon}
+          filmstrip={this.state.filmstrip}
+          focusedLot={this.state.focusedLot}
+          storyIndex={this.state.storyIndex}
+        /> : null }
         <div className="mapContainer">
           <div id="mapid"/>
           { this.state.showIntro ? 

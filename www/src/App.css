@@ -3,26 +3,6 @@
   position:relative;
 }
 
-.showfilm-enter {
-  max-height: 0px;
-  transition:  300ms;
-}
-
-.showfilm-enter.showfilm-enter-active {
-  height: auto;
-  max-height: 400px;
-}
-
-.showfilm-leave {
-  max-height: 400px;
-}
-
-.showfilm-leave.showfilm-leave-active {
-  max-height: 0px;
-  transition:  300ms;
-}
-
-
 .mapContainer {
    height:100%;
    background-color:black;
@@ -54,12 +34,6 @@ html, body
   display:table;
   table-layout: fixed;
 }
-
-.transgroup {
-  width:100%;
-  height:100%;
-}
-
 
 ::-webkit-scrollbar {
   background: black;
