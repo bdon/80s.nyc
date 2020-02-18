@@ -7,9 +7,9 @@
   },
   "dependencies": {
     "history": "^4.10.1",
-    "react": "^15.4.2",
+    "react": "^16.12.0",
     "react-autocomplete": "^1.8.1",
-    "react-dom": "^15.4.2",
+    "react-dom": "^16.12.0",
     "tachyons": "^4.11.1",
     "whatwg-fetch": "^2.0.2"
   },
