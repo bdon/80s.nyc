@@ -38,7 +38,7 @@ class App extends React.Component {
   }
 
   openTweet = (e) => {
-    window.open("https://twitter.com/intent/tweet?via=80snyc&url=http://80s.nyc/" + encodeURIComponent(location.hash),"height=600,width=600")
+    window.open("https://twitter.com/intent/tweet?via=80snyc&url=http://80s.nyc/" + encodeURIComponent(window.location.hash),"height=600,width=600")
   }
 
   setMarkerViaLatLon = (lat,lon) => {
@@ -168,7 +168,7 @@ class App extends React.Component {
       })
     }
     
-    map.on('click', (e) => {
+    this.map.on('click', (e) => {
       if (this.map.getZoom() < 14) {
         this.map.flyTo({center: e.lngLat, zoom:14})
       } else {
@@ -177,10 +177,12 @@ class App extends React.Component {
       }
     })
 
-    fetch('/stories.json').then((response) => {
-      response.json().then((val) => {
-        this.setState({storyIndex:new StoryIndex(val)})
-        this.map.getSource("stories").setData(val)
+    this.map.on("load", () => {
+      fetch('/stories.json').then((response) => {
+        response.json().then((val) => {
+          this.setState({storyIndex:new StoryIndex(val)})
+          this.map.getSource("stories").setData(val)
+        })
       })
     })
   }

@@ -3,9 +3,9 @@ class Hash {
     this.history = history
 		this.lastHash = null
 
-		var parsed = this.parseHash(location.hash)
+		var parsed = this.parseHash(window.location.hash)
 		if (parsed) {
-      this.lastHash = location.hash
+      this.lastHash = window.location.hash
       this.lastParsed = parsed
 		}
   }
