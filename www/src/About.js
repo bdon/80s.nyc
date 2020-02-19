@@ -77,7 +77,7 @@ class About extends React.Component {
         </p>
         <div onClick={this.props.closeInfostrip}>
           <span className="dark-gray">ABOUT</span>
-          <span className="pv1 fr">CLOSE</span>
+          <span className="pv1 fr dim pointer">CLOSE</span>
         </div>
       </div>
     );

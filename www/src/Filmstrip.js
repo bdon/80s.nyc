@@ -68,7 +68,7 @@ class Filmstrip extends React.Component {
           { fprops.lname && fprops.rname ?
             <span className="dn di-l"> between {fprops.lname} and {fprops.rname}</span> : null
           }
-          <span className="fr">CLOSE</span>
+          <span className="fr dim pointer">CLOSE</span>
         </div>)
     }
 

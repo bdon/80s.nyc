@@ -37,9 +37,9 @@ class Navbar extends React.Component {
           <Geosearch onSelect={this.props.setMarkerViaLatLon}/>
           {this.state.noResults ? <span className="noresults">No results</span> : null }
           <span className="dn di-l">
-            <span className="mr3" onClick={() => this.props.openStories()}>STORIES</span>
-            <span className="mr3" onClick={() => this.props.openAbout()}>ABOUT</span>
-            <span className="" onClick={() => this.props.openTweet()}>SHARE ON TWITTER</span>
+            <span className="mr3 dim pointer" onClick={() => this.props.openStories()}>STORIES</span>
+            <span className="mr3 dim pointer" onClick={() => this.props.openAbout()}>ABOUT</span>
+            <span className="dim pointer" onClick={() => this.props.openTweet()}>SHARE ON TWITTER</span>
           </span>
           <div className="dn-l">
             <button className={"pa0 fr hamburger hamburger--spin"+(this.state.menuOpen ? ' is-active':'')} type="button" onClick={this.toggleHamburger}>
@@ -51,9 +51,9 @@ class Navbar extends React.Component {
         </div>
         { this.state.menuOpen ? 
         <div className="bg-black f4" key="navOptionsVertical">
-          <div className="pa3" onClick={() => {this.props.openStories(); this.toggleHamburger()} }>STORIES</div>
-          <div className="pa3" onClick={() => {this.props.openAbout(); this.toggleHamburger()} }>ABOUT</div>
-          <div className="pa3" onClick={() => {this.props.openTweet(); this.toggleHamburger()} }>SHARE ON TWITTER</div>
+          <div className="pa3 dim pointer" onClick={() => {this.props.openStories(); this.toggleHamburger()} }>STORIES</div>
+          <div className="pa3 dim pointer" onClick={() => {this.props.openAbout(); this.toggleHamburger()} }>ABOUT</div>
+          <div className="pa3 dim pointer" onClick={() => {this.props.openTweet(); this.toggleHamburger()} }>SHARE ON TWITTER</div>
         </div> : null }
       </nav>
     )

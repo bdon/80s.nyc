@@ -14,7 +14,7 @@ class Stories extends React.Component {
         const bbl = story.properties.bbl
         const imgsrc = imageUrl(bbl[0],bbl[1],bbl[2])
         return (<div className="dib" key={story.properties.id}>
-          <img className="h5 mr2 mb2" src={imgsrc} alt={story.properties.id} onClick={() => storiesComponent.openStory(story)}/>
+          <img className="h5 mr2 mb2 dim pointer" src={imgsrc} alt={story.properties.id} onClick={() => storiesComponent.openStory(story)}/>
           </div>)
       })
 
@@ -29,7 +29,7 @@ class Stories extends React.Component {
           /> : 'Stories not yet loaded.' }
         <div className="pa3" onClick={() => this.props.closeInfostrip()}>
           <span className="dark-gray">STORIES</span>
-          <span className="fr">CLOSE</span>
+          <span className="fr dim pointer">CLOSE</span>
         </div>
       </div>
     );
