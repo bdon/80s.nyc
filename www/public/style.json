@@ -11,8 +11,8 @@
   "sources": {
     "80snyc": {
       "type": "vector",
-      "tiles":["https://80s-nyc.nyc3.digitaloceanspaces.com/tiles/{z}/{x}/{y}.pbf"],
-      "minzoom":9,
+      "tiles":["https://80s-nyc.nyc3.digitaloceanspaces.com/80snyc_tiles/{z}/{x}/{y}.pbf"],
+      "minzoom":13,
       "maxzoom":14,
       "attribution":"© <a href=\"https://www.openstreetmap.org\" target=\"_blank\"> OpenStreetMap</a> contributors"
     },
@@ -41,173 +41,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#22181e"
-      }
-    },
-    {
-      "id": "coast",
-      "type": "fill",
-      "source": "80snyc",
-      "source-layer": "coastgeojson",
-      "paint": {
-        "fill-color": "#040304"
-      }
-    },
-    {
-      "id": "parks",
-      "type": "line",
-      "source": "80snyc",
-      "source-layer": "landusagesndjson",
-      "paint": {
-        "line-color":"black",
-        "line-opacity":0.4
-      },
-      "filter":["in","type","park","pitch"]
-    },
-    {
-      "id": "waterareas",
-      "type": "fill",
-      "source": "80snyc",
-      "source-layer": "waterareasndjson",
-      "paint": {
-        "fill-color": "#040304"
-      }
-    },
-    {
-      "id": "woods",
-      "type": "line",
-      "source": "80snyc",
-      "source-layer": "landusagesndjson",
-      "paint": {
-        "line-color":"black",
-        "line-opacity":0.4
-      },
-      "filter":["==","type","wood"]
-    },
-    {
-      "id": "cemeteries",
-      "type": "line",
-      "source": "80snyc",
-      "source-layer": "landusagesndjson",
-      "paint": {
-        "line-color":"black",
-        "line-opacity":0.4
-      },
-      "filter":["==","type","cemetery"]
-    },
-    {
-      "id": "schools",
-      "type": "fill",
-      "source": "80snyc",
-      "source-layer": "landusagesndjson",
-      "paint": {
-        "fill-color": "black"
-      },
-      "filter":["in","type","school","university"]
-    },
-    {
-      "id": "building",
-      "type": "fill-extrusion",
-      "source": "80snyc",
-      "source-layer": "buildingsndjson",
-      "paint": {
-        "fill-extrusion-color": "#d5c6cb",
-        "fill-extrusion-height": {
-            "type": "identity",
-            "property": "height"
-        },
-        "fill-extrusion-opacity": 0.2
-      }
-    },
-    {
-      "id": "roads1-casings",
-      "type": "line",
-      "source": "80snyc",
-      "source-layer": "roadsndjson",
-      "paint": {
-        "line-width":{
-          "stops":[
-            [14,3],
-            [17,8]
-          ]
-        },
-        "line-color": "black"
-      },
-      "filter":["all",["in","type","motorway","motorway-link"],["==","tunnel",0]],
-      "minzoom":14
-    },
-    {
-      "id": "roads1",
-      "ref":"roads1-casings",
-      "paint": {
-        "line-width":{
-          "stops":[
-            [14,2],
-            [17,8]
-          ]
-        },
-        "line-color": "#362630"
-      }
-    },
-    {
-      "id": "roads2-casings",
-      "type": "line",
-      "source": "80snyc",
-      "source-layer": "roadsndjson",
-      "paint": {
-        "line-width":{
-          "stops":[
-            [14,3],
-            [17,8]
-          ]
-        },
-        "line-color": "black"
-      },
-      "filter":["in","type","primary","primary-link","secondary","secondary-link","tertiary","tertiary-link"],
-      "minzoom":14
-    },
-    {
-      "id": "roads2",
-      "ref":"roads2-casings",
-      "paint": {
-        "line-width":{
-          "stops":[
-            [14,2],
-            [17,8]
-          ]
-        },
-        "line-color": "#362630"
-      }
-    },
-    {
-      "id": "railways-casings",
-      "type": "line",
-      "source": "80snyc",
-      "source-layer": "roadsndjson",
-      "paint": {
-        "line-width":{
-          "stops":[
-            [14,4],
-            [17,6]
-          ]
-        },
-        "line-color": "#111"
-      },
-      "filter":["all",["in","type","rail","subway"],["!=","service","siding"]],
-      "minzoom":14
-    },
-    {
-      "id": "railways",
-      "ref":"railways-casings",
-      "paint": {
-        "line-width":{
-          "stops":[
-            [14,2],
-            [17,3]
-          ]
-        },
-        "line-color": "#333",
-        "line-dasharray":[1,1]
+        "background-color": "black"
       }
     },
     {
@@ -216,13 +50,14 @@
       "source": "80snyc",
       "source-layer": "filmstripsndjson",
       "paint": {
-        "line-color": "white",
+        "line-color": "#357EDD",
         "line-width":{
           "stops":[
             [14,1.5],
             [18,4]
           ]
-        }
+        },
+        "line-opacity":0.75
       },
       "layout":{
         "line-cap":"round"
@@ -235,55 +70,15 @@
       "source": "80snyc",
       "source-layer": "filmstripsndjson",
       "paint": {
-        "line-color": "white",
+        "line-color": "#96CCFF",
         "line-width":20,
-        "line-opacity":0.5,
+        "line-opacity":0.75,
         "line-blur":10
       },
       "layout":{
         "line-cap":"round"
       },
       "filter":["==","id",""]
-    },
-    {
-      "id": "roads_labels",
-      "type": "symbol",
-      "source": "80snyc",
-      "source-layer": "roadsndjson",
-      "layout": {
-        "text-field": "{name}",
-        "text-font": [
-          "Open Sans Light"
-        ],
-        "text-size":13,
-        "symbol-placement":"line"
-      },
-      "paint":{
-        "text-color":"#eee",
-        "text-halo-color":"#22181e",
-        "text-halo-width":2.2
-      },
-      "minzoom":14
-    },
-    {
-      "id": "parks_labels",
-      "type": "symbol",
-      "source": "80snyc",
-      "source-layer": "landusagesndjson",
-      "layout": {
-        "text-field": "{name}",
-        "text-font": [
-          "Open Sans Light"
-        ],
-        "text-size":11
-      },
-      "paint":{
-        "text-color":"white",
-        "text-halo-color":"#22181e",
-        "text-halo-width":1.0
-      },
-      "minzoom":14,
-      "filter":["in","type","park"]
     },
     {
       "id":"stories-selected",
