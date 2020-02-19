@@ -1,4 +1,4 @@
-/* global mapboxgl, turf */
+/* global turf */
 
 import React from 'react'
 //import {FILE_URL} from './Utils.js'
@@ -9,6 +9,7 @@ import {Hash} from './hashState.js'
 import {Intro} from './Intro.js'
 import './hashState.js'
 import './App.css'
+import mapboxgl from 'mapbox-gl';
 
 class App extends React.Component {
   constructor(props) {

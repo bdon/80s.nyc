@@ -6,6 +6,7 @@
     "react-scripts": "^3.4.0"
   },
   "dependencies": {
+    "mapbox-gl": "^1.7.0",
     "react": "^16.12.0",
     "react-autocomplete": "^1.8.1",
     "react-dom": "^16.12.0",
