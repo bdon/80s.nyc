@@ -31,8 +31,8 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav>
-        <div className="pa3">
-          <span className="mr3 f3">80s.NYC</span>
+        <div className="pa3 flex items-center justify-between">
+          <span className="mr3 f3 v-mid">80s.NYC</span>
           <span className="dn di-l gray mr3">STREET VIEW OF 1980S NEW YORK</span>
           <Geosearch onSelect={this.props.setMarkerViaLatLon}/>
           {this.state.noResults ? <span className="noresults">No results</span> : null }
