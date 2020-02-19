@@ -83,18 +83,18 @@ class Filmstrip extends React.Component {
           const tooltip = "boro " + boro + " block " + block + " lot " + lot.lot_id
           return (<div className={className} key={boro + '-' + block + '-' + lot.lot_id}>
             { props.storyIndex && props.storyIndex.contains(boro,block,lot.lot_id) ?
-              <div className="storyFrame">
-                <div className="storyHeader">
-                <span className="storyTitle">STORY</span>
-                <span className="storyArrow">▶</span>
+              <div className="storyFrame w5">
+                <div className="mb1 mt4">
+                  STORY
+                  <span className="fr">▶</span>
                 </div>
-                {props.storyIndex.story(boro,block,lot.lot_id)}
+                <div className="pa2 lh-copy f7">{props.storyIndex.story(boro,block,lot.lot_id)}</div>
               </div>
               : null
             }
             <img src={iUrl} alt={tooltip} title={tooltip} className="image"/>
             { props.focusedLot === lot.lot_id ? 
-              <span className="pulse"></span>
+              <span className="db absolute top-0 pa1 gray bg-black f6">YOU ARE HERE</span>
               : null
             }
           </div>)

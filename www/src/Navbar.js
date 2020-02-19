@@ -41,7 +41,7 @@ class Navbar extends React.Component {
             <span className="mr3" onClick={() => this.props.openAbout()}>ABOUT</span>
             <span className="" onClick={() => this.props.openTweet()}>SHARE ON TWITTER</span>
           </span>
-          <button className={"dn-l fr hamburger hamburger--spin"+(this.state.menuOpen ? ' is-active':'')} type="button" onClick={this.toggleHamburger}>
+          <button className={"pa0 dn-l fr hamburger hamburger--spin"+(this.state.menuOpen ? ' is-active':'')} type="button" onClick={this.toggleHamburger}>
             <span className="hamburger-box">
               <span className="hamburger-inner"></span>
             </span>
