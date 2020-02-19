@@ -6,7 +6,6 @@
     "react-scripts": "^3.4.0"
   },
   "dependencies": {
-    "history": "^4.10.1",
     "react": "^16.12.0",
     "react-autocomplete": "^1.8.1",
     "react-dom": "^16.12.0",

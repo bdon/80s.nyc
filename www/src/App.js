@@ -1,7 +1,6 @@
 /* global mapboxgl, turf */
 
 import React from 'react'
-import createHistory from 'history/createBrowserHistory'
 //import {FILE_URL} from './Utils.js'
 import {StoryIndex} from './StoryIndex.js'
 import {Navbar} from './Navbar.js'
@@ -16,7 +15,6 @@ class App extends React.Component {
     super(props)
     this.state = {filmstrip: null,infoState:null,focusedLot:null,storyIndex:null,viewPosition:null}
     this.hash = null
-    this.history = null
   }
 
   updateUrl() {
@@ -131,8 +129,7 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    this.history = createHistory()
-    this.hash = new Hash(this.history)
+    this.hash = new Hash()
     if (this.hash.lastParsed && this.hash.lastParsed.filmstripOpen) {
       this.setState({infoState:"filmstrip",showIntro:false})
     } else {
