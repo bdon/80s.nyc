@@ -13,6 +13,11 @@
       "type": "vector",
       "tiles":["https://80s-nyc.nyc3.digitaloceanspaces.com/80snyc_tiles/{z}/{x}/{y}.pbf"],
       "minzoom":13,
+      "maxzoom":14
+    },
+    "basemap": {
+      "type": "vector",
+      "tiles":["https://80s-nyc.nyc3.digitaloceanspaces.com/basemap/{z}/{x}/{y}.pbf.gz"],
       "maxzoom":14,
       "attribution":"© <a href=\"https://www.openstreetmap.org\" target=\"_blank\"> OpenStreetMap</a> contributors"
     },
@@ -41,7 +46,146 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "black"
+        "background-color": "#ccc"
+      }
+    },
+        {
+      "id": "water",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "water",
+      "paint": {"fill-color": "#444"}
+    },
+    {
+      "id": "physical",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "physical",
+      "paint": {"line-color": "rgba(178, 178, 187, 1)"}
+    },
+    {
+      "id": "wood",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "natural",
+      "filter": ["all", ["==", "natural", "wood"]],
+      "paint": {"fill-color": "rgba(194, 203, 194, 1)"}
+    },
+    {
+      "id": "parks",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landuse",
+      "filter": ["==", "leisure", "park"],
+      "paint": {"fill-color": "rgba(214, 228, 203, 1)"}
+    },
+    {
+      "id": "buildings",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "buildings",
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "rgba(191, 191, 191, 1)"}
+    },
+    {
+      "id": "buildings-top",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "buildings",
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "#bbb",
+        "fill-outline-color": "#888",
+        "fill-translate": {"base": 1, "stops": [[14, [0, 0]], [16, [-1, -2]]]}
+      }
+    },
+    {
+      "id": "roads_paths",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["in", "highway", "footway", "steps", "pedestrian", "cycleway", "path"],
+        ["!has", "tunnel"]
+      ],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "line-width": {"stops": [[14, 0.1], [15, 0.5], [18, 4]]},
+        "line-color": "rgba(189, 189, 189, 1)",
+        "line-opacity": {"stops": [[14, 0], [14.5, 1]]}
+      }
+    },
+    {
+      "id": "roads_minor",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        [
+          "in",
+          "highway",
+          "service",
+          "residential",
+          "living_street",
+          "unclassified",
+          "track"
+        ],
+        ["!has", "tunnel"]
+      ],
+      "paint": {
+        "line-color": "rgba(255, 255, 255, 1)",
+        "line-width": {"stops": [[12.5, 0], [13, 0.5], [16, 2], [20, 12]]}
+      }
+    },
+    {
+      "id": "roads_major",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["in", "highway", "secondary", "tertiary", "primary"],
+        ["!has", "tunnel"]
+      ],
+      "paint": {
+        "line-color": "rgba(255, 255, 255, 1)",
+        "line-width": {"stops": [[10, 0], [10.5, 0.5], [13, 1.5], [20, 12]]}
+      }
+    },
+    {
+      "id": "roads_motorway",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "roads",
+      "filter": [
+        "all",
+        ["in", "highway", "motorway", "motorway_link", "trunk"],
+        ["!has", "tunnel"]
+      ],
+      "paint": {
+        "line-color": "rgba(255, 255, 255, 1)",
+        "line-width": {"stops": [[6, 0], [7, 0.5], [13, 1.5], [20, 18]]}
+      }
+    },
+    {
+      "id": "mask",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "mask",
+      "paint": {"fill-color": "black"}
+    },
+    {
+      "id": "runway",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transit",
+      "filter": ["all", ["has", "aeroway"]],
+      "layout": {"line-cap": "butt", "line-join": "bevel"},
+      "paint": {
+        "line-color": "rgba(194, 194, 194, 1)",
+        "line-width": {"stops": [[10, 1], [14, 8]]}
       }
     },
     {
@@ -53,16 +197,99 @@
         "line-color": "#357EDD",
         "line-width":{
           "stops":[
-            [14,1.5],
+            [14,2.5],
             [18,4]
           ]
         },
-        "line-opacity":0.75
+        "line-opacity":0.9
       },
       "layout":{
         "line-cap":"round"
       },
       "minzoom":14
+    },
+    {
+      "id": "road_label_major",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "roads",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        ["in", "highway", "primary", "secondary", "tertiary", "trunk"]
+      ],
+      "layout": {
+        "symbol-placement": "line",
+        "text-field": "{name}",
+        "text-font": ["Open Sans Regular"],
+        "text-size": {"base": 1, "stops": [[12, 11], [15, 16]]}
+      },
+      "paint": {
+        "text-halo-width": 1,
+        "text-halo-color": "#ccc",
+        "text-color": "rgba(113, 113, 113, 1)"
+      }
+    },
+    {
+      "id": "road_label_minor",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "roads",
+      "minzoom": 16,
+      "filter": [
+        "in",
+        "highway",
+        "residential",
+        "unclassified",
+        "living_street",
+        "service",
+        "track"
+      ],
+      "layout": {
+        "symbol-placement": "line",
+        "text-field": "{name}",
+        "text-anchor": "bottom",
+        "text-font": ["Open Sans Regular"],
+        "text-size": {"base": 1, "stops": [[16, 11], [18, 16]]}
+      },
+      "paint": {"text-color": "rgba(122, 122, 122, 1)"}
+    },
+    {
+      "id": "place_city",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "places",
+      "filter": ["all", ["==", "place", "city"]],
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Open Sans Semibold"],
+        "text-size": {"base": 1, "stops": [[6, 12], [12, 16]]},
+        "text-transform":"uppercase",
+        "text-letter-spacing":0.07
+      },
+      "paint": {
+        "text-color": "black",
+        "text-halo-color":"#ccc",
+        "text-halo-width":1.0
+      }
+    },
+    {
+      "id": "place_village",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "places",
+      "minzoom": 12,
+      "filter": ["!in", "place", "village", "city", "country"],
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Open Sans Semibold"],
+        "text-size": {"base": 1, "stops": [[12, 12], [14, 16]]}
+      },
+      "paint": {
+        "text-color": "#333",
+        "text-halo-color":"#ccc",
+        "text-halo-width":1.0
+      }
     },
     {
       "id": "filmstrips-highlight",
@@ -72,7 +299,6 @@
       "paint": {
         "line-color": "#96CCFF",
         "line-width":20,
-        "line-opacity":0.75,
         "line-blur":10
       },
       "layout":{
@@ -111,7 +337,7 @@
       "source":"viewPosition",
       "paint": {
         "circle-radius": 12,
-        "circle-color": "#fbdd96",
+        "circle-color": "#FFD700",
         "circle-opacity":0.5
       }
     },
@@ -120,7 +346,7 @@
       "ref":"viewPosition-halo",
       "paint": {
         "circle-radius": 6,
-        "circle-color": "#fbdd96"
+        "circle-color": "#FFD700"
       }
     }
   ]
