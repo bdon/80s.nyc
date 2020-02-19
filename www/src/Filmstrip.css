@@ -29,19 +29,9 @@
 }
 
 .storyFrame {
-  display:inline-block;
-  background-color:black;
-  color:white;
-  height:400px;
+  background-color:rgba(0,0,0,0.3);
   text-align:left;
   white-space:normal;
-  top:0px;
-  transition: fadein 1s;
-  z-index:1;
-}
-
-.story .floatingText:hover {
-  opacity:1;
 }
 
 .filmstrip {

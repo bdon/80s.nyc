@@ -83,10 +83,9 @@ class Filmstrip extends React.Component {
           const tooltip = "boro " + boro + " block " + block + " lot " + lot.lot_id
           return (<div className={className} key={boro + '-' + block + '-' + lot.lot_id}>
             { props.storyIndex && props.storyIndex.contains(boro,block,lot.lot_id) ?
-              <div className="storyFrame w5">
-                <div className="mb1 mt4">
+              <div className="storyFrame absolute w5 mw-100">
+                <div className="pa1 f6">
                   STORY
-                  <span className="fr">▶</span>
                 </div>
                 <div className="pa2 lh-copy f7">{props.storyIndex.story(boro,block,lot.lot_id)}</div>
               </div>
