@@ -93,7 +93,7 @@ class App extends React.Component {
     }
     const clickedPoint = { "type": "Point", "coordinates": [lng,lat] }
     const closestFilmstrip = closeFilmstrips.reduce((acc,filmstrip) => {
-      const dist = turf.pointOnLine(filmstrip.geometry, clickedPoint).properties.dist
+      const dist = turf.nearestPointOnLine(filmstrip.geometry, clickedPoint).properties.dist
       return (dist < acc[1]) ? [filmstrip,dist] : acc
     },[null,Infinity])[0]
     const closestLotOnFilmstrip = this.map.querySourceFeatures('80snyc', {
