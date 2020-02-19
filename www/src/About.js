@@ -6,8 +6,14 @@ class About extends React.Component {
       <div className="pa3 lh-copy measure-wide ws-normal light-gray fw4">
         <h2>ABOUT</h2>
         <p>
-          80s.nyc is a map-based full street view of 1980s New York City, organizing photographs from the New York City Municipal Archives’ Department of Finance Collection into an easy-to-browse glimpse of the streetscape 30 years ago. 
+          80s.NYC is a map-based full street view of 1980s New York City, organizing photographs from the New York City Municipal Archives’ Department of Finance Collection into an easy-to-browse glimpse of the streetscape 30 years ago. 
         </p>
+        <p>80s.NYC is made by:</p>
+        <ul>
+          <li>Brandon Liu (<a className="blue" href="https://twitter.com/bdon">@bdon</a>) - GIS and programming, source for this site available <a className="blue"  href="https://github.com/bdon/80s.nyc">here</a>.</li>
+          <li>Jeremy Lechtzin (<a className="blue" href="https://twitter.com/jeremylechtzin">@jeremylechtzin</a>) - history; research; data collection. Writes about historic Brooklyn through data at <a className="blue"  href="https://oldbrooklynheights.com">oldbrooklynheights.com</a></li>
+        </ul>
+        <p>All photographs are property of the NYC Department of Records.</p>
         <div className="mt4 fw5">WHERE DO THESE PHOTOS COME FROM?</div>
         <hr/>
         <p>
@@ -53,12 +59,6 @@ class About extends React.Component {
         <p>
           Some blocks, in particular those that contain large buildings that take up one side of a street or even an entire block, may be represented in the dataset by just one photo. This might have worked for the original tax appraisal purpose of the data, but unfortunately isn’t very useful for a streetview. Similarly, this dataset doesn’t lend itself to representing corner buildings, only one side of which was usually photographed.
         </p>
-        <div className="mt4 fw5">WHO MADE THIS?</div>
-        <hr/>
-        <ul>
-          <li>Brandon Liu (<a className="blue" href="https://twitter.com/bdon">@bdon</a>) - GIS and programming, source for this site available <a className="blue"  href="https://github.com/bdon/80s.nyc">here</a>.</li>
-          <li>Jeremy Lechtzin (<a className="blue" href="https://twitter.com/jeremylechtzin">@jeremylechtzin</a>) - history; research; data collection. Writes about historic Brooklyn through data at <a className="blue"  href="https://oldbrooklynheights.com">oldbrooklynheights.com</a></li>
-        </ul>
         <div className="mt4 fw5">COPYRIGHT NOTICE</div>
         <hr/>
         <p>
