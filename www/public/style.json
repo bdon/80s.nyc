@@ -46,7 +46,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#ccc"
+        "background-color": "#cccccf"
       }
     },
         {
@@ -85,7 +85,7 @@
       "source": "basemap",
       "source-layer": "buildings",
       "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(191, 191, 191, 1)"}
+      "paint": {"fill-color": "rgba(181, 181, 200, 1)"}
     },
     {
       "id": "buildings-top",
@@ -94,7 +94,7 @@
       "source-layer": "buildings",
       "layout": {"visibility": "visible"},
       "paint": {
-        "fill-color": "#bbb",
+        "fill-color": "#aaaabb",
         "fill-outline-color": "#888",
         "fill-translate": {"base": 1, "stops": [[14, [0, 0]], [16, [-1, -2]]]}
       }
@@ -226,13 +226,13 @@
       "layout": {
         "symbol-placement": "line",
         "text-field": "{name}",
-        "text-font": ["Open Sans Regular"],
+        "text-font": ["Open Sans Semibold"],
         "text-size": {"base": 1, "stops": [[12, 11], [15, 16]]}
       },
       "paint": {
         "text-halo-width": 1,
         "text-halo-color": "#ccc",
-        "text-color": "rgba(113, 113, 113, 1)"
+        "text-color": "#333"
       }
     },
     {
@@ -257,7 +257,7 @@
         "text-font": ["Open Sans Regular"],
         "text-size": {"base": 1, "stops": [[16, 11], [18, 16]]}
       },
-      "paint": {"text-color": "rgba(122, 122, 122, 1)"}
+      "paint": {"text-color": "#333"}
     },
     {
       "id": "place_city",
