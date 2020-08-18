@@ -39,7 +39,8 @@ class Navbar extends React.Component {
           <span className="dn di-l">
             <span className="mr3 dim pointer" onClick={() => this.props.openStories()}>STORIES</span>
             <span className="mr3 dim pointer" onClick={() => this.props.openAbout()}>ABOUT</span>
-            <span className="dim pointer" onClick={() => this.props.openTweet()}>SHARE ON TWITTER</span>
+            <span className="mr3 dim pointer" onClick={() => this.props.openTweet()}>SHARE ON TWITTER</span>
+            <span className="dim pointer bg-dark-gray pv1 ph2"><a target="_blank" class="white" href="https://1940s.nyc">1940s</a></span>
           </span>
           <div className="dn-l">
             <button className={"pa0 fr hamburger hamburger--spin"+(this.state.menuOpen ? ' is-active':'')} type="button" onClick={this.toggleHamburger}>
@@ -54,6 +55,7 @@ class Navbar extends React.Component {
           <div className="pa3 dim pointer" onClick={() => {this.props.openStories(); this.toggleHamburger()} }>STORIES</div>
           <div className="pa3 dim pointer" onClick={() => {this.props.openAbout(); this.toggleHamburger()} }>ABOUT</div>
           <div className="pa3 dim pointer" onClick={() => {this.props.openTweet(); this.toggleHamburger()} }>SHARE ON TWITTER</div>
+          <div className="pa3 dim pointer bg-dark-gray"><a target="_blank" class="white" href="https://1940s.nyc">1940s</a></div>
         </div> : null }
       </nav>
     )
