@@ -25,13 +25,16 @@ class About extends React.Component {
           Yes! At the end of the 1930s into the early 1940s, coordinated by the Federal Works Progress Administration, the City created its first set of “tax photos” – at that time, over 700,000 black & white 35mm photos of almost every building in New York. In some respects, this earlier photo set is more historically interesting – twice as old, and before the post-war construction boom (aided and abetted by Robert Moses) remade large swaths of the city.
         </p>
         <p>
+          You can view the 1940s tax photos mapped onto the present-day street grid at the <a className="blue" href="https://1940s.nyc">1940s.nyc</a> website. However, only the 1980s photo set has had been digitized when this site was originally created in 2017.
+        </p>
+        <p>
           However, only the 1980s photo set has been digitized. 
         </p>
         <p>
-          Because the Department of Finance originally recorded each 1980s print as one frame on Laser Video Disks (LVDs), using analog video capture, the low-resolution images were able to be extracted for the Municipal Archives online gallery. Both sets have made their way from proprietary use by the Finance Department to the City’s Municipal Archives in recent years. The Municipal Archives makes the 1980s photo set available for public viewing on <a className="blue" href="http://nycma.lunaimaging.com/luna/servlet">its imagery website</a>.
+          Because the Department of Finance originally recorded each 1980s print as one frame on Laser Video Disks (LVDs), using analog video capture, the low-resolution images were able to be extracted for the Municipal Archives online gallery, even before the Archives finished digitizing the 1940s photos in 2018. Both sets have made their way from proprietary use by the Finance Department to the City’s Municipal Archives in recent years. The Municipal Archives makes the 1940s and 1980s photo sets available for public viewing on <a className="blue" href="http://nycma.lunaimaging.com/luna/servlet">its imagery website</a>.
         </p>
         <p>
-          The Archives will be digitizing the 1940s photos in 2018. You can buy high-quality prints of the 1940s and 1980s photos via the "Order Online" link on <a className="blue" href="https://www1.nyc.gov/dorforms/photoform.htm">the Municipal Archives website.</a>
+          You can buy high-quality prints of the 1940s and 1980s photos via the "Order Online" link on <a className="blue" href="https://www1.nyc.gov/dorforms/photoform.htm">the Municipal Archives website.</a>
         </p>
         <div className="mt4 fw5">WHY ARE THESE PHOTOS SO SMALL/GRAINY?</div>
         <hr/>
@@ -40,6 +43,9 @@ class About extends React.Component {
         </p>
         <p>
           The underlying photos of individual buildings represented by these thumbnails won’t win any prizes for technical merit. They’re small, grainy, washed out and often the buildings might be unrecognizable. Still, taken as a whole, the thumbnails paint a distinctive picture of New York City in the 1980s – in many places, recovering from near-bankruptcy in the prior decade which left hulks of burned-out buildings and garbage-strewn lots; in other places, hanging on to the grandeur and glory of the greatest city in the world.
+        </p>
+        <p>
+          For more back-story on the 1980s photos (and a few glimpses of how stunning real scans of the 1980s negatives can be), see <a href="https://www.archives.nyc/blog/2019/5/3/the-1980s-tax-photographs" className="blue">this 2019 blog post</a> by Michael Lorenzini, a photo archivist at the NYC Department of Records (the agency that runs the Municipal Archives).
         </p>
         <div className="mt4 fw5">WHAT’S THE POINT OF 80S.NYC?</div>
         <hr/>
