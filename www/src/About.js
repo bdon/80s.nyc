@@ -25,10 +25,7 @@ class About extends React.Component {
           Yes! At the end of the 1930s into the early 1940s, coordinated by the Federal Works Progress Administration, the City created its first set of “tax photos” – at that time, over 700,000 black & white 35mm photos of almost every building in New York. In some respects, this earlier photo set is more historically interesting – twice as old, and before the post-war construction boom (aided and abetted by Robert Moses) remade large swaths of the city.
         </p>
         <p>
-          You can view the 1940s tax photos mapped onto the present-day street grid at the <a className="blue" href="https://1940s.nyc">1940s.nyc</a> website. However, only the 1980s photo set has had been digitized when this site was originally created in 2017.
-        </p>
-        <p>
-          However, only the 1980s photo set has been digitized. 
+          You can view the 1940s tax photos mapped onto the present-day street grid at the <a className="blue" href="https://1940s.nyc">1940s.nyc</a> website. However, only the 1980s photo set had been digitized when this site was originally created in 2017.
         </p>
         <p>
           Because the Department of Finance originally recorded each 1980s print as one frame on Laser Video Disks (LVDs), using analog video capture, the low-resolution images were able to be extracted for the Municipal Archives online gallery, even before the Archives finished digitizing the 1940s photos in 2018. Both sets have made their way from proprietary use by the Finance Department to the City’s Municipal Archives in recent years. The Municipal Archives makes the 1940s and 1980s photo sets available for public viewing on <a className="blue" href="http://nycma.lunaimaging.com/luna/servlet">its imagery website</a>.
