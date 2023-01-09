@@ -31,7 +31,7 @@ class Geosearch extends React.Component {
               clearTimeout(self.requestTimer)
             }
             self.requestTimer = setTimeout(function() {
-                fetch('https://geosearch.planninglabs.nyc/v1/search?site=80s.nyc&text=' + value).then(function(response){
+                fetch('https://geosearch.planninglabs.nyc/v2/search?site=80s.nyc&text=' + value).then(function(response){
                   response.json().then(function(items) {
                       self.setState({unitedStates:items.features})
                   })

@@ -11,7 +11,7 @@ class Navbar extends React.Component {
   search = (e) => {
     const navbarComponent = this
     e.preventDefault()
-    fetch('https://geosearch.planninglabs.nyc/v1/search?site=80s.nyc&text=' + this.inputref.value).then(function(response){
+    fetch('https://geosearch.planninglabs.nyc/v2/search?site=80s.nyc&text=' + this.inputref.value).then(function(response){
       response.json().then(function(val) {
         var geometry = val.features[0].geometry
         if (val.length === 0) {
