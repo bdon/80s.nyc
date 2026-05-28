@@ -36,7 +36,7 @@
       }
     }
   },
-  "glyphs": "https://80s-nyc.nyc3.digitaloceanspaces.com/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://80snyc.bdon.org/fonts/{fontstack}/{range}.pbf",
   "transition": {
     "duration": 300,
     "delay": 0
