@@ -37,7 +37,7 @@ class App extends React.Component {
   }
 
   openTweet = (e) => {
-    window.open("https://twitter.com/intent/tweet?via=80snyc&url=http://80s.nyc/" + encodeURIComponent(window.location.hash),"height=600,width=600")
+    window.open("https://twitter.com/intent/tweet?via=80snyc&url=https://80s.nyc/" + encodeURIComponent(window.location.hash),"height=600,width=600")
   }
 
   setMarkerViaLatLon = (lat,lon) => {

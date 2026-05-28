@@ -7,7 +7,7 @@
   "color": "white",
   "intensity": 0.3
   },
-  "sprite":"http://80s.nyc/images/atlas",
+  "sprite":"https://80s.nyc/images/atlas",
   "sources": {
     "80snyc": {
       "type": "vector",
