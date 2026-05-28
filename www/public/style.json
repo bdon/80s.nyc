@@ -11,13 +11,13 @@
   "sources": {
     "80snyc": {
       "type": "vector",
-      "tiles":["https://80s-nyc.nyc3.digitaloceanspaces.com/80snyc_tiles/{z}/{x}/{y}.pbf"],
+      "tiles":["https://80snyc.bdon.org/80snyc_tiles/{z}/{x}/{y}.pbf"],
       "minzoom":14,
       "maxzoom":14
     },
     "basemap": {
       "type": "vector",
-      "tiles":["https://80s-nyc.nyc3.digitaloceanspaces.com/basemap/{z}/{x}/{y}.pbf.gz"],
+      "tiles":["https://80snyc.bdon.org/basemap/{z}/{x}/{y}.pbf"],
       "maxzoom":14,
       "attribution":"© <a href=\"https://www.openstreetmap.org\" target=\"_blank\"> OpenStreetMap</a> contributors"
     },
